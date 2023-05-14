@@ -1,0 +1,123 @@
+[
+  {
+    "description": "    test Hirestreetuk application",
+    "keyword": "Feature",
+    "name": "Hirestreetuk apllication",
+    "line": 1,
+    "id": "hirestreetuk-apllication",
+    "tags": [],
+    "uri": "hirestreetuk.feature",
+    "elements": [
+      {
+        "id": "hirestreetuk-apllication;applying-valid-discount-code",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Applying valid discount code",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "a User is checking out",
+            "result": {
+              "status": "passed",
+              "duration": 2088000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the User has items in their cart",
+            "result": {
+              "status": "passed",
+              "duration": 2684000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the customer applies a valid discount code '2FOR35'",
+            "result": {
+              "status": "passed",
+              "duration": 4053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the order total should be updated with the discounted price '£47.00'",
+            "result": {
+              "status": "passed",
+              "duration": 198000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the discount amount should be displayed '-£19.00'",
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "hirestreetuk-apllication;applying-invalid-discount-code",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Applying invalid discount code",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "a User is checking out",
+            "result": {
+              "status": "passed",
+              "duration": 1949000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the User has items in their cart",
+            "result": {
+              "status": "passed",
+              "duration": 1504000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "the User applies an invalid discount code '2FOR37'",
+            "result": {
+              "status": "passed",
+              "duration": 2070000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the User should see an error message indicating that 'Oops. Invalid discount code \"2FOR37\"'",
+            "result": {
+              "status": "passed",
+              "duration": 188000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
