@@ -6,10 +6,7 @@ class HomePage {
             cy.get('#userSigninPassword').focus().type(user.password);
             cy.contains('Sign In').click()
         })
-
     }
-
-
 }
 
 const homepage = new HomePage();
